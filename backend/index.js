@@ -7,6 +7,7 @@ const userRoute = require("./Routes/userRoute")
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const port = process.env.PORT || 8000;
+app.use(express.static("build"));
 
 mongoose.connect(process.env.DBCON, {
     // useNewUrlParser: true,
