@@ -1,7 +1,8 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import { Outlet, Link, useNavigate } from "react-router-dom";
-import { BsFillEmojiSmileFill } from "react-icons/bs";
+import { FaRegSmileBeam } from "react-icons/fa";
+
 const Dashboard = () => {
   const navigate = useNavigate();
 
@@ -14,7 +15,7 @@ const Dashboard = () => {
     <>
       <div id="topdash">
         <h1>
-          Welcome! User <BsFillEmojiSmileFill />
+          Welcome! User <FaRegSmileBeam />
         </h1>
       </div>
 
@@ -35,8 +36,11 @@ const Dashboard = () => {
                     My Task
                   </Link>
                 </li>
-                <li> 
-                  <Link to="changepass" id="link">Change Password</Link></li>
+                <li>
+                  <Link to="changepass" id="link">
+                    Change Password
+                  </Link>
+                </li>
                 <li>Services</li>
                 <li>Logout</li>
               </ul>
